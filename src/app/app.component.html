@@ -1,21 +1,39 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
-<router-outlet></router-outlet>
+<div class="container" style="max-width:600px;margin:60px auto; background: rgba(51,204,204,0.3)">
+	<form role="form">
+	   <div class="col-md-14 mb-3">
+      <label for="validationServer01">Nombre</label>
+      <input type="text" class="form-control is-valid" id="validationServer01" placeholder="Nombre" required>      
+    </div>
+    <div class="col-md-14 mb-3">
+      <label for="validationServer02">Apellido</label>
+      <input type="text" class="form-control is-valid" id="validationServer02" placeholder="Apellido" required>      
+    </div>
+
+    <div class="col-md-14 mb-3">
+    
+        <label for="validationServer03">Ciudad</label>
+        <input type="text" class="form-control is-invalid" id="validationServer03" placeholder="Ciudad" required>
+         
+    </div>
+    <div class="col-md-14 mb-3">
+      <label for="validationServerUsername">Username</label>
+      <div class="input-group">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="inputGroupPrepend3">@</span>
+        </div>
+        <input type="text" class="form-control is-invalid" id="validationServerUsername" placeholder="Username" aria-describedby="inputGroupPrepend3" required>
+      </div>
+    </div>
+	  <div class="form-group">
+      <div class="form-check">
+        <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+        <label class="form-check-label" for="invalidCheck3">
+          Aceptar terminos y condiciones
+        </label>      
+      </div>
+    </div>
+    <button class="btn btn-primary" type="submit">Submit form</button>
+	</form>
+</div>
+
